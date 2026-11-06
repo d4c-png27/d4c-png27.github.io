@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<!--
+XAVIER CROSS PORTFOLIO — INFO1005 Website Design
+Built with Bootstrap 5.3 (layout and components) plus css/custom.css (our own colours, fonts and styling).
+Folders: css/ (styles), img/ (images), pdf/ (resume), favicon/ (tab icon).
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Xavier Cross, a hospitality professional moving into human resources. Resume and portfolio.">
+  <meta name="author" content="Xavier Cross">
+
+  <!-- FONTS: Constantia (headings) and LFT Etica (body) are set in css/custom.css.
+       Neither is a Google Font, so they show on computers that have them installed;
+       other devices fall back to Georgia (headings) and Arial (body). -->
+
+  <!-- Favicons: tab icon made from Xavier's photo (files live in the favicon folder) -->
+  <link rel="icon" href="favicon/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+
+  <!-- Bootstrap 5.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS comes AFTER Bootstrap so our styles win -->
+  <link href="css/custom.css" rel="stylesheet">
+
+  <!-- Page title shown in the browser tab -->
+  <title>Xavier Cross Portfolio</title>
+</head>
+
+<body>
+
+  <!-- NAVIGATION: sticks to the top; collapses into a button on phones -->
+  <nav id="mainNav" class="navbar navbar-expand-lg sticky-top" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand" href="#top">
+        <img class="brand-img" src="img/xavier_cross_avatar.jpg" alt="Xavier Cross"> Xavier Cross
+      </a>
+
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#portfolioNavbar"
+              aria-controls="portfolioNavbar"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="portfolioNavbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Highlights</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#evidence">Reflection</a></li>
+          <li class="nav-item"><a class="nav-link" href="pdf/xavier_cross_resume.pdf" target="_blank">Resume</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO: photo on the left, name, one-line introduction and resume button on the right.
+       The text comes first in the code (better for screen readers); order-lg-1 / order-lg-2 swap them on large screens. -->
+  <header id="top" class="hero">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-12 col-lg-8 order-lg-2">
+          <p class="eyebrow">Human Resources</p>
+          <h1>Xavier Cross</h1>
+          <p class="lead-intro">Hospitality professional with five years of front-of-house experience, bringing people skills, training and teamwork into human resources.</p>
+          <a class="btn custom-btn" href="pdf/xavier_cross_resume.pdf" target="_blank">Open resume PDF</a>
+        </div>
+
+        <div class="col-12 col-lg-4 order-lg-1">
+          <img class="img-fluid hero-portrait" src="img/xavier_cross_photo.jpg" alt="Portrait of Xavier Cross">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container site-content">
+    <div class="row g-4">
+
+      <!-- LEFT COLUMN (full width on phones): About and Skills -->
+      <aside class="col-12 col-lg-4">
+        <section id="about" class="content-panel">
+          <h2>About Me</h2>
+          <img class="img-fluid profile-img" src="img/xavier_cross_avatar.jpg" alt="Close-up photo of Xavier Cross">
+          <p>I'm an enthusiastic and self-motivated front-of-house server with five years of hospitality experience. I'm now moving into human resources and studying at Western Sydney University.</p>
+        </section>
+
+        <section id="skills" class="content-panel">
+          <h2>Skills</h2>
+          <!-- A plain list instead of percentage bars: these are real certificates and training, not scores -->
+          <ul class="skill-list">
+            <li>Five-star guest service standards</li>
+            <li>Event and banquet operations coordination</li>
+            <li>Champagne and premium beverage service knowledge</li>
+            <li>Training and supporting new staff</li>
+            <li>RSA and RCG certified</li>
+            <li>Food safety certificate (TAFE)</li>
+            <li>General cookery certificate (TAFE)</li>
+            <li>Barista certificate (TAFE)</li>
+          </ul>
+        </section>
+      </aside>
+
+      <!-- RIGHT COLUMN: experience, highlights, portfolio and reflection -->
+      <div class="col-12 col-lg-8">
+
+        <section id="experience" class="content-panel">
+          <h2>Education and Experience</h2>
+
+          <div class="timeline-item">
+            <h3>Waiter</h3>
+            <h4>W Sydney Hotel (2930 Bar and Banquets) · 2024 to present</h4>
+            <p>Deliver five-star service in the hotel's cocktail bar and help run banquets for conferences, corporate events and private functions.</p>
+          </div>
+          <div class="timeline-item">
+            <h3>Fry Cook</h3>
+            <h4>Lord of the Fries · April 2023 to February 2024</h4>
+            <p>Prepared meals on time in a high-pressure environment, trained new workers, ran shifts and closed the store to protocol.</p>
+          </div>
+          <div class="timeline-item">
+            <h3>Fry Cook</h3>
+            <h4>Hot Star, Burwood · June 2022 to March 2023</h4>
+            <p>Followed food safety and hygiene rules, trained and supported new staff, and handled opening and closing duties.</p>
+          </div>
+          <div class="timeline-item">
+            <h3>Diploma of Business</h3>
+            <h4>Western Sydney University · 2026</h4>
+            <p>Studying towards a degree in human resources management.</p>
+          </div>
+          <div class="timeline-item">
+            <h3>Hospitality Certificate II</h3>
+            <h4>Ultimo TAFE · 2024 to 2025</h4>
+            <p>Food safety, general cookery and barista certificates.</p>
+          </div>
+          <div class="timeline-item">
+            <h3>Secondary School</h3>
+            <h4>Dulwich High School of Visual Arts and Design · 2019 to 2024</h4>
+          </div>
+        </section>
+
+        <!-- HIGHLIGHT IMAGE: one still image (no slider). The picture is a collage of three photos,
+             shown whole so all three can be seen. -->
+        <section id="projects" class="content-panel">
+          <h2>From the Floor to HR</h2>
+          <p>Hospitality work builds the same skills human resources depends on: listening to people, training new staff and coordinating shifts.</p>
+          <img src="img/floor_to_hr.jpg" class="img-fluid feature-image" alt="Collage of three photos: a paper megaphone and ear joined by a string between two wooden figures, a person raising a hand in an audience, and a rising bar chart with an arrow">
+        </section>
+
+        <!-- PORTFOLIO: three separate full-width sections, one after another.
+             Each has a still image on the left and its text on the right (stacked on phones). -->
+        <div id="portfolio">
+          <h2>Hospitality Skills in Practice</h2>
+
+          <section class="content-panel">
+            <div class="row g-4 align-items-center">
+              <div class="col-12 col-md-5">
+                <img src="img/training_meeting.jpg" class="img-fluid section-image" alt="A presenter pointing at a screen while colleagues sit around a table in a meeting room">
+              </div>
+              <div class="col-12 col-md-7">
+                <h3>Training and onboarding</h3>
+                <p><strong>In hospitality:</strong> I trained new workers and ran shifts at Lord of the Fries, and trained and supported new staff at Hot Star.</p>
+                <p><strong>In HR:</strong> the same skills as onboarding and development.</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="content-panel">
+            <div class="row g-4 align-items-center">
+              <div class="col-12 col-md-5">
+                <img src="img/events_audience.jpg" class="img-fluid section-image" alt="A large audience seated in an event space facing a stage and screen">
+              </div>
+              <div class="col-12 col-md-7">
+                <h3>Events and coordination</h3>
+                <p><strong>In hospitality:</strong> at the W Sydney Hotel I assist with banquets for conferences, corporate events and private functions.</p>
+                <p><strong>In HR:</strong> the organisation and teamwork needed to coordinate people and workplace events.</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="content-panel">
+            <div class="row g-4 align-items-center">
+              <div class="col-12 col-md-5">
+                <img src="img/standards_rules.jpg" class="img-fluid section-image" alt="Checklists headed Rules with ticked items, seen through a magnifying glass above a laptop">
+              </div>
+              <div class="col-12 col-md-7">
+                <h3>Standards and compliance</h3>
+                <p><strong>In hospitality:</strong> I hold food safety, RSA and RCG certificates and follow hygiene and closing procedures.</p>
+                <p><strong>In HR:</strong> taking workplace rules and policies seriously, which is central to compliance.</p>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- ACCORDION (the template's drop-down): click a heading to open or close its section.
+             Only one is open at a time. -->
+        <section id="evidence" class="content-panel">
+          <h2>Reflection</h2>
+          <p>Why I'm moving from hospitality into human resources.</p>
+
+          <div class="accordion" id="evidenceAccordion">
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                        aria-expanded="true" aria-controls="collapseOne">
+                  What hospitality taught me
+                </button>
+              </h3>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#evidenceAccordion">
+                <div class="accordion-body">
+                  Working in busy venues taught me to communicate clearly, stay calm under pressure, support teammates and keep high standards. Those are the same habits that good HR work relies on.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                        aria-expanded="false" aria-controls="collapseTwo">
+                  What I'm studying now
+                </button>
+              </h3>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#evidenceAccordion">
+                <div class="accordion-body">
+                  I'm completing a Diploma of Business at Western Sydney University in 2026, with the aim of continuing into a human resources management degree.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                        aria-expanded="false" aria-controls="collapseThree">
+                  What I want to do next
+                </button>
+              </h3>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#evidenceAccordion">
+                <div class="accordion-body">
+                  I want to move into a human resources role where I can use my experience in training, teamwork and service to support both staff and the business.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Xavier Cross · INFO1005 Website Design</p>
+    </div>
+  </footer>
+
+  <!-- BEFORE SUBMITTING: test the menu, accordion and resume link,
+       resize the window to phone and tablet widths, then validate the HTML and CSS. -->
+
+  <!-- Bootstrap JavaScript powers the navbar and the accordion. -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
